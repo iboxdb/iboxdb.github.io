@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="iBoxDB,NoSQL,Android,Xamarin,Unity3D,Java,Database,Embeddable,Serverless,DB,ORM,Mono,ACID,C#,.NET,Download">
+    <meta name="description" content="iBoxDB Fast ACID Lightweight Embedded NoSQL Document Database for JAVA C# Android Unity Mono Xamarin .NET Linux Windows">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+
+    <title>iBoxDB JAVA C# Embedded NoSQL Document Database Android Unity Xamarin Mono</title>
+
+
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="highlight/styles/vs.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer" style="border-bottom-style: solid; border-bottom-width: medium; border-bottom-color: #CC3300;">
+        <header class="inner">
+
+            <h1 id="project_title">iBoxDB <span style="display: inline-block; width: 1px; height: 1px; overflow: hidden">Embeddable Object Document NoSQL Database Storage Engines </span><span style="font-size: large">Download</span></h1>
+
+            <h2 id="project_tagline">Fast ACID Table Style Document NoSQL Application Database</h2>
+
+            <div id="downloads">
+                <a href="#nosql_download"
+                   style="border: 1px solid #FFFFFF; padding: 5px 28px 5px 28px; top: 103px; position: relative; font-size: x-large; background-color: #333333; color: #FFFFFF; font-weight: lighter;">DOWNLOAD</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+
+            <h3>Project Description</h3>
+
+            <p>iBoxDB is a fast transactional table style document NoSQL Application Database, easily store, process objects and documents, traditional table with unstructured data, zero configuration, pure JAVA and .NET engines, no dependencies.</p>
+
+            <p>
+                iBoxDB has a well designed interface with great performance and capability for agile development. You can create applications with database services embedded and deploy it on mobiles, desktops, servers,
+                to persist your data from anywhere.
+            </p>
+            <p>
+                Dual Core Application Database
+                <br />
+                For &nbsp; JAVA &nbsp; C# &nbsp; Android &nbsp; Unity &nbsp; Xamarin &nbsp; Mono &nbsp; Nashorn &nbsp; Linux &nbsp; Windows
+
+            </p>
+
+
+            <h3>Features</h3>
+
+            <ul>
+                <li>CRUD</li>
+                <li>KeyValue and KeyOnly tables</li>
+                <li>Unique and non-unique indexes</li>
+                <li>Unique and non-unique composite indexes</li>
+                <li>SQL like query language</li>
+                <li>Transactions support</li>
+                <li>Concurrency control, thread safe</li>
+                <li>Memory management</li>
+                <li>Scalable hot MasterSlave and MasterMaster replications</li>
+                <li>On disk and in memory databases supported</li>
+                <li>Automatically create databases</li>
+                <li>Zero configuration, copy and run, purely managed code</li>
+                <li>Dynamic columns</li>
+                <li>Different types with different indexes can be stored in same table</li>
+                <li>Persistence + ORM + Cache + Embeddable, ONE STOP solution</li>
+                <li>ResultSet compatible with LINQ</li>
+                <li>High performance, no dependencies</li>
+                <li>Update Increment</li>
+                <li>Selecting Tracer</li>
+                <li>Snapshot-Serializable Isolation</li>
+                <li>JAVA6+ &nbsp; .NET2+</li>
+            </ul>
+            <!-- key words -->
+            <div style="width: 1px; height: 1px; overflow: hidden">
+                C# Java Embeddable NoSQL Database Best Key-Value and Key-Only Document Database.
+                iBoxDB Android Xamarin Mono Java NET Best Lightweight Stable Standalone Self Contained NoSQL Document Database.
+                Embedded Database nosql storage engines, small fast multithreaded engine has zero deployment cost,
+                for real time and embedded applications.
+                Lite NoSQL DB with SQL support and Object Relational Mapping ORM, ACID Transaction Document Database.
+            </div>
+
+            <h3 id="nosql_download">Download</h3>
+
+            <span class="dlversion">iBoxDB.NET v2.17.3&nbsp;&nbsp; iBoxDB.JAVA v2.8.3</span>
+            <br />
+            [<a href="https://sourceforge.net/projects/application-database/files/iBoxDBv21730_283.zip/download" target="_blank">Download</a>]
+            &nbsp;&nbsp;
+            [<a href="https://github.com/iboxdb/hijk/raw/dependencies/kits/iBoxDBv21730_283.zip" target="_blank">Download Mirror</a>]
+
+            <br />
+            Adjust Code
+
+            <br />
+            <br />
+
+            <span class="dlversion">iBoxDB.NET v2.17&nbsp;&nbsp; iBoxDB.JAVA v2.8</span>
+            <br />
+            [<a href="https://sourceforge.net/projects/application-database/files/iBoxDBv21700_28.zip/download" target="_blank">Download</a>]
+            &nbsp;&nbsp;
+            [<a href="https://github.com/iboxdb/hijk/raw/dependencies/kits/iBoxDBv21700_28.zip" target="_blank">Download Mirror</a>]
+
+            <br />
+            New BoxData format
+
+            <br />
+            <br />
+
+
+            <a href="javascript:void(0)" onclick="javascript:code9.style.display='block'">The DB Life Cycle</a>
+            <br />
+            <pre style="display: none" id="code9"><code class="java">import iBoxDB.LocalServer.*;
+
+public class App{
+   public static AutoBox auto;
+}                
+synchronized static void onApplicationStart() { 
+  DB.root(path);
+  DB db = new DB(1); 
+  db.getConfig().ensureTable(&quot;Table&quot;, Member.class, &quot;Id&quot;) 
+                .ensureIndex(&quot;Table&quot;, Member.class, &quot;Name&quot;); 
+  //Tree-&gt;Parts 
+  db.getConfig().ensureTable(&quot;Node&quot;, Node.class, &quot;Id&quot;) 
+                .ensureIndex(&quot;Node&quot;, Node.class, &quot;Parent&quot;); 
+
+  db.getConfig().ensureTable(&quot;Part&quot;, Part.class, &quot;Id&quot;) 
+                .ensureIndex(&quot;Part&quot;, Part.class, &quot;Node&quot;);
+
+  DatabaseConfig cfg = db.getConfig().DBConfig;
+  cfg.CacheLength = cfg.mb(512);
+  cfg.FileIncSize = (int)cfg.mb(4);
+
+  App.auto = db.open(); 
+}        
+                         
+void anywhere1() { 
+  App.auto.insert(&quot;Table&quot;, new Member()); 
+} 
+
+void anywhere2() { 
+  try (Box box = App.auto.cube()) { 
+    box.d(&quot;Table&quot;).insert(new Member()); 
+    CommitResult cr = box.commit(); 
+  } 
+} 
+
+boolean exists(Box box) { 
+  return box.selectCount(&quot;from Table limit 0,1&quot;) &gt; 0; 
+} 
+
+&lt;V&gt; Iterable&lt;V&gt; startsWith(Box box, Class&lt;V&gt; vClass, String prefix) { 
+  String begin = prefix; 
+  char[] cs = prefix.toCharArray(); 
+  cs[cs.length - 1] = (char) ((short) cs[cs.length - 1] + 1); 
+  String end = new String(cs); 
+  return box.select(vClass,&quot;from Table where Name&gt;=? &amp; Name&lt;?&quot;,begin,end); 
+}
+
+void treeJoin(Box box, long nodeRoot, int maxLevel, StringBuilder result) { 
+  if (maxLevel &gt; 5) { return; } 
+  char[] cs = new char[maxLevel * 2]; Arrays.fill(cs, &#39; &#39;); 
+  for (Node node : box.select(Node.class, &quot;from Node where Parent==?&quot;, nodeRoot)) { 
+    result.append(cs).append(&quot;NODE:&quot;)
+          .append(&quot;-&gt;&quot;).append(node.Id).append(&quot;\r\n&quot;); 
+    for (Part part : box.select(Part.class, &quot;from Part where Node==?&quot;, node.Id)) { 
+      result.append(cs).append(&quot; PART:&quot;)
+            .append(&quot;-&gt;&quot;).append(part.Id).append(&quot;\r\n&quot;); 
+    } 
+    treeJoin(box, node.Id, maxLevel + 1, result); 
+  } 
+}
+
+synchronized static void onApplicationClose() { 
+  App.auto.getDatabase().close(); 
+} 
+</code></pre>
+
+            <a href="javascript:void(0)" onclick="javascript:code10.style.display='block'">Use DatabaseServer to Manage Configs</a>
+            <br />
+            <pre style="display: none" id="code10"><code class="cs">using iBoxDB.LocalServer;
+using iBoxDB.LocalServer.IO;
+
+public class AppServer : LocalDatabaseServer 
+{ 
+  private static AppServer server = new AppServer(); 
+  public static IDatabase DB(long address) 
+  { 
+    return server.GetInstance(address); 
+  }
+
+  abstract class Config : BoxFileStreamConfig 
+  { 
+    public Config() : base() 
+    { 
+      CacheLength = MB(512); 
+      FileIncSize = (int)MB(4); 
+      ReadStreamCount = 8; 
+    } 
+  } 
+                
+  class MainConfig : Config 
+  { 
+    public MainConfig() : base() 
+    { 
+      EnsureTable&lt;Member&gt;(&quot;Member&quot;, &quot;Id&quot;); 
+      //set Max-Length = 20, String default is 32
+      EnsureIndex&lt;Member&gt;(&quot;Member&quot;, &quot;Name(20)&quot;);
+      EnsureTable&lt;Product&gt;(&quot;Product&quot;, &quot;Type&quot;, &quot;UID&quot;); 
+    }
+  }
+  
+  class InventoryConfig : Config 
+  { 
+    public InventoryConfig() : base() 
+    { 
+      EnsureTable&lt;Item&gt;(&quot;Item&quot;, &quot;Id&quot;); 
+    } 
+  } 
+                
+  protected override DatabaseConfig BuildDatabaseConfig(long address) 
+  { 
+    switch (address) 
+    { 
+      case 1L: return new MainConfig(); 
+      case 2L: return new InventoryConfig(); 
+      default: return null; 
+    } 
+  } 
+} 
+                
+void Anywhere1() 
+{ 
+  var auto = AppServer.DB(1L).Get(); 
+  auto.Insert(&quot;Member&quot;, new Member()); 
+} 
+                
+void Anywhere2() 
+{ 
+  var db = AppServer.DB(2L); 
+  using (var box = db.Cube()) 
+  { 
+    box[&quot;Item&quot;].Insert(new Item()); 
+    CommitResult cr = box.Commit(); 
+  } 
+}
+
+void OnApplicationClose() 
+{ 
+  AppServer.server.Dispose(); 
+}</code></pre>
+
+
+
+            <a href="javascript:void(0)" onclick="javascript:code13.style.display='block'">JSP Config</a>
+            <br />
+            <pre style="display: none" id="code13"><code class="java,xml">//db.jsp
+&lt;%@page contentType=&quot;text/html&quot; pageEncoding=&quot;UTF-8&quot; session=&quot;false&quot; %&gt;
+&lt;%@page import=&quot;iBoxDB.LocalServer.*&quot; %&gt;
+&lt;%!
+    public static AutoBox auto() {
+        synchronized (DB.class) {
+            if (DB.Tag != null) {
+                return (AutoBox) DB.Tag;
+            }
+
+            String root = System.getProperty(&quot;user.home&quot;) + &quot;/jsp_data/&quot;;
+            new java.io.File(root).mkdirs();
+            DB.root(root);
+            DB db = new DB(1);
+            db.getConfig().ensureTable(JSPUser.class, &quot;JSPUser&quot;, &quot;id&quot;);
+
+            DB.Tag = db.open();
+            return (AutoBox) DB.Tag;
+        }
+    }
+
+    public static class JSPUser {
+        public long id;
+        public String name;
+    }
+%&gt;
+
+//index.jsp
+&lt;%@page contentType=&quot;text/html&quot; pageEncoding=&quot;UTF-8&quot; session=&quot;false&quot;%&gt;
+&lt;%@include file=&quot;db.jsp&quot; %&gt;
+
+&lt;%
+    long id = auto().newId();
+
+    JSPUser user = new JSPUser();
+    user.id = id;
+    user.name = &quot;iBoxDB on JSP -&quot; + user.id;
+    auto().insert(&quot;JSPUser&quot;, user);
+%>
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;&lt;%=auto().get(JSPUser.class, &quot;JSPUser&quot;, id).name%&gt; &lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+            <a href="javascript:void(0)" onclick="javascript:code4.style.display='block'">Save DB as String</a>
+            <br />
+            <pre style="display: none" id="code4"><code class="cs">Start(){
+    byte[] data = Convert.FromBase64String(PlayerPrefs.GetString(&quot;DB&quot;,&quot;&quot;)); 
+    db = new DB(data);
+    db.MinConfig().FileIncSize = 1; 
+    ...
+    auto = db.Open();
+}  
+Save() { 
+    byte[] data = db.GetBuffer(); 
+    PlayerPrefs.SetString(&quot;DB&quot;,Convert.ToBase64String(data)); 
+    PlayerPrefs.Save(); 
+}
+</code></pre>
+
+            <a href="javascript:void(0)" onclick="javascript:code3.style.display='block'">Unity3D WebGL Save</a>
+            <br />
+            <pre style="display: none" id="code3"><code class="cs">if (GUI.Button(new Rect(0, 50, Screen.width / 2, 50), &quot;Save&quot;)) { 
+   Application.ExternalEval(&quot;FS.syncfs(false, function (err) {});&quot;); 
+}
+</code></pre>
+
+            <a href="javascript:void(0)" onclick="javascript:code11.style.display='block'">Cache Only &amp; Heat Up</a>
+            <br />
+            <pre style="display: none" id="code11"><code class="cs">DB db = new DB(DB.CacheOnlyArg);
+//Heats engine up Before Application.Start()
+//System.Threading.Tasks.Task.Run((Action)Hot);
+new Thread(() =&gt; { Hot(); }).Start();
+public static void Hot() { 
+  var db = new DB(DB.CacheOnlyArg); 
+  db.GetConfig().EnsureTable&lt;Item&gt;(&quot;Item&quot;, &quot;Time&quot;, &quot;Gid&quot;); 
+  var auto = db.Open(); 
+  auto.Insert(&quot;Item&quot;, new Item()); 
+  auto.Select(&quot;from Item&quot;); 
+  db.Close(); 
+  MakeSureClassesAreLinked();
+} 
+private static void MakeSureClassesAreLinked() { 
+  if (Object.ReferenceEquals(1, 2)) { 
+    new System.IO.FileStream(&quot;&quot;, System.IO.FileMode.OpenOrCreate,
+        System.IO.FileAccess.ReadWrite, System.IO.FileShare.ReadWrite, 1);
+    System.IO.File.Exists(&quot;&quot;); 
+  } 
+}</code></pre>
+
+            <a href="javascript:void(0)" onclick="javascript:code1.style.display='block'">Customize .NET Strong Name</a>
+            <br />
+            <pre style="display: none" id="code1"><code class="ss"> sn -k kp.snk 
+ ildasm A.dll /out:A.il 
+ rename A.dll A.bak
+ ilasm  A.il  /dll /key=kp.snk</code></pre>
+
+
+            <a href="javascript:void(0)" onclick="javascript:code12.style.display='block'">Complex Search, Region Control</a>
+            <br />
+            <pre style="display: none" id="code12"><code class="cs">//use a simple query to control search region
+box.Select&lt;User&gt;(&quot;from User where Ver&gt;? limit 0,1000&quot;, last) 
+   //with a complex query to filter data
+   .Where((u) =&gt; { 
+       if ( u... )
+        if ( u... )
+          return u.Time &gt; dt ;
+   });
+</code></pre>
+
+            <a href="javascript:void(0)" onclick="javascript:code14.style.display='block'">Java 9 Automatic-Module-Name</a>
+            <br />
+            <pre style="display: none" id="code14"><code class="java">module newmodule { 
+  //rename .jar 
+  //cp iBoxDBv28.jar iBoxDB.jar 
+  requires iBoxDB; 
+                
+  //The DB Classes package 
+  exports app;   
+} </code></pre>
+
+            <a href="javascript:void(0)" onclick="javascript:code7.style.display='block'">Java 7,8 GC option</a>
+            <br />
+            <pre style="display: none" id="code7">
+-XX:+UseConcMarkSweepGC 
+</pre>
+
+            <br />
+            <a href="https://github.com/iboxdb/ftserver" target="_blank">Full Text Search FTS JAVA</a>
+            <br />
+            <a href="https://github.com/iboxdb/ftserver-cs" target="_blank">Full Text Search FTS C#</a>
+            <br />
+            <a href="https://github.com/iboxdb/forjava/tree/master/demos" target="_blank">Key Only Example JAVA</a>
+            <br />
+            <a href="https://github.com/iboxdb/forjava/wiki/Use-multi-thread-to-increase-speed-and-use-CommitEvent-to-decrease-conflict#ss-transaction" target="_blank">Snapshot and Serializable Isolations in one Transaction</a>
+            <br />
+            <a href="https://github.com/iboxdb/forjava/tree/master/java9" target="_blank">Java9 [module-info.java] Update</a>
+            <br />
+            <a href="https://www.nuget.org/packages/iBoxDB/" target="_blank">Nuget Package</a>
+            <br />
+            <br />
+
+            <h5>License</h5>
+            FreeSoftware Redistributable
+            <br />
+            The software is licensed &quot;as-is.&quot; You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer" style="border-top-style: solid; border-top-width: medium; border-top-color: #CC3300">
+        <footer class="inner">
+            <p class="copyright">
+                Dual Core Application Database Express
+                <br />
+                For &nbsp; JAVA &nbsp; C# &nbsp; Android &nbsp; Unity &nbsp; Xamarin &nbsp; Mono &nbsp; Nashorn &nbsp; Linux &nbsp; Windows
+                <br />
+                NoSQL Storage Engines &nbsp; <a href="index.html" style="color: #FFFFFF; text-decoration: underline;">www.iBoxDB.com</a>
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="highlight/highlight.packS.jS?SRC=USER"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
