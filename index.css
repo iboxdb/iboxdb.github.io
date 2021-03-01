@@ -41,7 +41,7 @@ body {
     color: #373737;
     background: #212121;
     font-size: 22px;
-    font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    font-family:  Arial, sans-serif, Calibri, Helvetica;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
