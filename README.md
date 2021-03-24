@@ -156,7 +156,7 @@ Dual Core Application Database
   box.Select("*from Member");
   //selecting tracer, startswith '!'
   box.Select("!from Member")  
-~~~
+```
 
 ### Index, make Select hundred times faster in average
 
@@ -249,6 +249,43 @@ using(var box = auto.Cube()){
   });                            
 }
 ```
+
+### Update Increment
+
+&nbsp; | Apply To | Trigger | Type 
+------ | -------- | ------- | ----
+UpdateIncrement | non-primary key | insert/update | long 
+AutoIncrement | primary key | insert | number 
+
+
+&nbsp; | Value From | Generator Time
+------ | ---------- | --------------
+UpdateIncrement | Database NewId(MaxPos,1) | Serializable Transaction Commit 
+AutoIncrement | Table Max(ID)+1 | Data Insert, Differed from Commit order 
+
+
+### Selecting Tracer
+
+&nbsp; | Thread | Usage 
+------ | ------ | -----
+Tracer | non-blocked | read/write different records  
+Locker | blocked | read/write same record  
+
+
+### IO
+
+.NET | JAVA 
+---- | ----
+ class BoxFileStreamConfig
+ class BoxMemoryStreamConfig
+ class ReadonlyStreamConfig
+ class CacheStreamConfig
+ | 
+  class BoxFileStreamConfig 
+ class BoxMemoryStreamConfig
+ class ReadonlyStreamConfig
+ class CacheStreamConfig 
+ 
 
 
 [Benchmark with MySQL -Java](https://github.com/iboxdb/teadb)
