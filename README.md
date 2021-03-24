@@ -233,6 +233,23 @@ Dual Core Application Database
   box3.Commit(); 
  ```
 
+ ### Snapshot-Serializable Transaction
+
+
+Transaction Step | Isolation Level
+---------------- | ---------------
+Application Point | Snapshot 
+Database Point | Serializable 
+
+```cs
+using(var box = auto.Cube()){
+  //Snapshot...
+  box.Commit( ()=>{
+    //Serializable...  
+  });                            
+}
+```
+
 
 [Benchmark with MySQL -Java](https://github.com/iboxdb/teadb)
 
