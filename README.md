@@ -288,13 +288,13 @@ using(var box = auto.Cube()){
 
 &nbsp; | Apply To | Trigger | Type 
 ------ | -------- | ------- | ----
-UpdateIncrement | non-primary key | insert/update | long 
+**UpdateIncrement** | non-primary key | insert/update | long 
 AutoIncrement | primary key | insert | number 
 
 
 &nbsp; | Value From | Generator Time
 ------ | ---------- | --------------
-UpdateIncrement | Database NewId(MaxPos,1) | Serializable Transaction Commit 
+**UpdateIncrement** | Database NewId(MaxPos,1) | Serializable Transaction Commit 
 AutoIncrement | Table Max(ID)+1 | Data Insert, Differed from Commit order 
 
 
@@ -302,7 +302,7 @@ AutoIncrement | Table Max(ID)+1 | Data Insert, Differed from Commit order
 
 &nbsp; | Thread | Usage 
 ------ | ------ | -----
-Tracer | non-blocked | read/write different records  
+**Tracer** | non-blocked | read/write different records  
 Locker | blocked | read/write same record  
 
 
@@ -329,10 +329,11 @@ IBoxDB.LocalServer.DB.Root("/data/")
 DB.Root(MapPath("~/App_Data/"))
 ```
 
-#### Xamarin DB.Root(System.Environment.GetFolderPath( 
+#### Xamarin 
 
 ```cs
-System.Environment.SpecialFolder.LocalApplicationData/Personal))
+DB.Root(System.Environment.GetFolderPath(
+  System.Environment.SpecialFolder.LocalApplicationData/Personal))
 ```
 
 #### Unity3D 
