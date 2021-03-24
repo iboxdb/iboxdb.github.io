@@ -308,9 +308,8 @@ Locker | blocked | read/write same record
 
 ### IO
 
-IO |  
--- |
-BoxFileStreamConfig | 
+BoxFileStreamConfig |
+------------------- |  
 BoxMemoryStreamConfig |
 ReadonlyStreamConfig |
 CacheStreamConfig |
@@ -405,6 +404,7 @@ auto.getDatabase().getSchemata()
  ------ | ------
  *.Name | Name
  *.name | name
+ Java | Column
  *.Name(val) | Name
  *.setName(val) | Name
  *.name(val) | name
