@@ -1,5 +1,5 @@
 
-![GitHub Logo](images/ico2.png)
+![](images/ico2.png)
 
 # iBoxDB
 
@@ -11,23 +11,24 @@
 
 iBoxDB is a fast acid table-style document NoSQL Embedded Database, easily store objects and documents, traditional table with unstructured data, zero configuration, pure JAVA and DotNET engines, no dependencies.
 
-\
+
 
 iBoxDB has a well designed interface with great performance and capability for agile development. You can create applications with database services embedded and deploy it on mobiles, desktops, servers, to locally persist your data from anywhere. 
 
-\
+
 
 **Green**, low carbon emission!
 
-\
+
 
 Dual Core Application Database 
 
-\
+
 
  For   JAVA   C#   Android   Unity   Xamarin   Mono   Linux   Windows 
 
-\
+
+
 
 [Download](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iBoxDBv30_30.zip&selected=pilotfiber)
 
