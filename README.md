@@ -25,7 +25,7 @@ Dual Core Application Database
 
 
 
- For &nbsp;&nbsp;  JAVA,   C#,   Android,   Unity,   Xamarin,   Mono,   Linux,   Windows... 
+ For &nbsp; JAVA,   C#,   Android,   Unity,   Xamarin,   Mono,   Linux,   Windows... 
 
 
 
@@ -471,8 +471,14 @@ MySQL
 [.NET Linq, integrating with SQL ORM -XPO](https://sourceforge.net/p/datastorexpo/code/)
             
 
+<br />
 
-## Examples 2
+<br />
+
+<br />
+
+
+## More Examples
 
 ### The DB Life Cycle 
 
