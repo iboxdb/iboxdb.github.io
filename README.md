@@ -164,8 +164,12 @@ Dual Core Application Database
   config.EnsureIndex<Member>("Member", "Field1","Field2")
   config.ensureIndex(Member.class, "Member", isUnique,"Field1","Field2")
   box.Select("from Member where Field1 == ? & Field2 == ?",arg1,arg2)
+```
+```cs
   //Id on the Left would faster in many cases
   box.Select("from Member where Id == ? & Field == ?",id,arg)
+```
+```cs
   //combining Results would faster than OR,
   //depends on the scale of dataset and corresponded Index configure.	
   //where Id == ? | Id == ? | Id == ?
@@ -274,18 +278,204 @@ Locker | blocked | read/write same record
 
 ### IO
 
-.NET | JAVA 
----- | ----
- class BoxFileStreamConfig / 
- class BoxMemoryStreamConfig /
- class ReadonlyStreamConfig /
- class CacheStreamConfig /
- | 
- class BoxFileStreamConfig /
- class BoxMemoryStreamConfig /
- class ReadonlyStreamConfig /
- class CacheStreamConfig / 
- 
+&nbsp; |  
+------ |
+BoxFileStreamConfig | 
+BoxMemoryStreamConfig |
+ReadonlyStreamConfig |
+CacheStreamConfig |
+
+
+### Database Path
+#### C# & JAVA,  place outside IDE working directory can get better performance 
+
+```cs
+//different path has hugely different writing speed on VM.
+IBoxDB.LocalServer.DB.Root("/data/") 
+```
+
+#### ASP.NET Cross Platform 
+
+```cs
+DB.Root(MapPath("~/App_Data/"))
+```
+
+#### Xamarin DB.Root(System.Environment.GetFolderPath( 
+
+```cs
+System.Environment.SpecialFolder.LocalApplicationData/Personal))
+```
+
+#### Unity3D 
+
+```cs
+DB.Root(Application.persistentDataPath)
+```
+
+#### Android 
+
+```java
+DB.root(android.os.Environment.getDataDirectory()
+       .getAbsolutePath() + "/data/" + packageName + "/") 
+```
+
+#### JSP WebApplication
+
+```java
+@WebListener()
+public class StartListener implements ServletContextListener {
+    @Override
+    public void contextInitialized(ServletContextEvent sce) {
+       String path = System.getProperty("user.home") + "/data/"; 
+       new File(path).mkdirs();   
+       DB.root(path); 
+    }
+} 
+```
+
+### Getting Started   C# and Java
+
+```cs
+ using IBoxDB.LocalServer;
+
+ var db = new DB();
+ db.GetConfig().EnsureTable<Record>("Table", "Id");
+ AutoBox auto = db.Open();
+
+ auto.Insert("Table", new Record { Id = 1L, Name = "Andy" });
+ var record = auto.Get<Record>("Table", 1L);
+ record.Name = "Kelly";
+ auto.Update("Table", record);
+ auto.Delete("Table", 1L);  
+ ```
+
+ ```java
+ import iboxdb.localserver.*;
+
+ DB db = new DB();
+ db.getConfig().ensureTable(Record.class, "Table", "Id");
+ AutoBox auto = db.open();
+
+ auto.insert("Table", new Record(1L, "Andy"));
+ Record record = auto.get(Record.class, "Table", 1L);
+ record.Name = "Kelly";
+ auto.update("Table", record);
+ auto.delete("Table", 1L);  
+ ```
+
+### Install
+
+```sh
+.NET: Add NETDB/iBoxDB.DLL  to Project
+```
+
+```sh
+Java: Add JavaDB/iboxdb.jar to Project
+```
+
+### Benchmark with MySQL
+
+```sql
+iBoxDB
+ Insert: 1,000,000 AVG: 47,016 objects/s 
+ Update: 1,000,000 AVG: 25,558 objects/s 
+ Delete: 1,000,000 AVG: 42,714 objects/s 
+
+MySQL
+ Insert: 1,000,000 AVG: 5,514 objects/s 
+ Update: 1,000,000 AVG: 5,109 objects/s 
+ Delete: 1,000,000 AVG: 6,044 objects/s 
+ ```
+
+ ### Supported Types
+
+ .NET | 
+ ---- |
+ bool |
+ char |
+ byte |
+ sbyte |
+ short | 
+ ushort |
+ int |
+ uint |
+ long |
+ ulong |              
+ float |
+ double |        
+ decimal |
+ DateTime |
+ Guid |
+      |   
+ bool? | 
+ char? | 
+ byte? | 
+ sbyte? | 
+ short? |
+ ushort? | 
+ int? | 
+ uint? | 
+ long? | 
+ ulong? |      
+ float? | 
+ double? | 
+ decimal? |
+ DateTime? |
+ Guid? | 
+ string | 
+
+
+ JAVA | 
+ ---- |
+ boolean | 
+ Boolean |
+ byte | 
+ Byte |
+ char | 
+ Character |
+ short | 
+ Short |
+ int | 
+ Integer |
+ long | 
+ Long |
+ float |
+ Float |
+ double |
+ Double |
+ UUID |
+ Date |
+   |
+ //dynamic length |
+ BigDecimal |
+ BigInteger |
+ String |
+
+
+ ### Automatic Object Mapping 
+
+ Method | Column
+ ------ | ------
+ *.Name | Name
+ *.name | name
+ *.Name(val) | Name
+ *.setName(val) | Name
+ *.name(val) | name
+ *.setname(val) | name
+
+
+ //non-indexable
+ HashMap<String,Object>
+ MemoryStream
+ byte[]
+ Object[]
+                            
+ //non-indexable
+ Dictionary<string, object>
+ MemoryStream
+ byte[]
+ string[]
+  
 
 
 [Benchmark with MySQL -Java](https://github.com/iboxdb/teadb)
