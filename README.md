@@ -633,7 +633,7 @@ void OnApplicationClose()
 
 ### JSP Config 
 
-```java
+```jsp
 //db.jsp
 <%@page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <%@page import="iboxdb.localserver.*" %>
