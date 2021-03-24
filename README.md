@@ -276,15 +276,15 @@ Locker | blocked | read/write same record
 
 .NET | JAVA 
 ---- | ----
- class BoxFileStreamConfig
- class BoxMemoryStreamConfig
- class ReadonlyStreamConfig
- class CacheStreamConfig
+ class BoxFileStreamConfig / 
+ class BoxMemoryStreamConfig /
+ class ReadonlyStreamConfig /
+ class CacheStreamConfig /
  | 
-  class BoxFileStreamConfig 
- class BoxMemoryStreamConfig
- class ReadonlyStreamConfig
- class CacheStreamConfig 
+ class BoxFileStreamConfig /
+ class BoxMemoryStreamConfig /
+ class ReadonlyStreamConfig /
+ class CacheStreamConfig / 
  
 
 
