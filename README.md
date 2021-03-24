@@ -406,7 +406,7 @@ MySQL
  decimal |
  DateTime |
  Guid |
-      |   
+ &nbsp; |   
  bool? | 
  char? | 
  byte? | 
@@ -423,7 +423,12 @@ MySQL
  DateTime? |
  Guid? | 
  string | 
-
+ &nbsp; |
+ //non-indexable |
+ Dictionary<string, object> |
+ MemoryStream |
+ byte[] |
+ string[] |
 
  JAVA | 
  ---- |
@@ -445,12 +450,18 @@ MySQL
  Double |
  UUID |
  Date |
-   |
+ &nbsp; |
  //dynamic length |
  BigDecimal |
  BigInteger |
  String |
-
+ &nbsp; |
+ //non-indexable |
+ HashMap<String,Object> |
+ MemoryStream |
+ byte[] |
+ Object[] |
+                            
 
  ### Automatic Object Mapping 
 
@@ -464,17 +475,6 @@ MySQL
  *.setname(val) | name
 
 
- //non-indexable
- HashMap<String,Object>
- MemoryStream
- byte[]
- Object[]
-                            
- //non-indexable
- Dictionary<string, object>
- MemoryStream
- byte[]
- string[]
   
 
 
