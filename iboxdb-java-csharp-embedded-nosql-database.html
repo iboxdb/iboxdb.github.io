@@ -1,4 +1,4 @@
-﻿
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
@@ -258,7 +258,7 @@ void OnApplicationClose()
 
             <a href="javascript:void(0)" onclick="javascript:code13.style.display='block'">JSP Config</a>
             <br />
-            <pre style="display: none" id="code13"><code class="java,xml">//db.jsp
+            <pre style="display: none" id="code13"><code class="jsp">//db.jsp
 &lt;%@page contentType=&quot;text/html&quot; pageEncoding=&quot;UTF-8&quot; session=&quot;false&quot; %&gt;
 &lt;%@page import=&quot;iboxdb.localserver.*&quot; %&gt;
 &lt;%!
@@ -420,6 +420,13 @@ box.select("from Table where Id > ?" , new Variant("1"));
  //1024*1024*1024*3
 </code></pre>
 
+
+      <a href="javascript:void(0)" onclick="javascript:code17.style.display='block'">Schemata</a>
+            <br />
+            <pre style="display: none" id="code17"><code class="java">auto.getDatabase().getSchemata() 
+</code></pre>
+
+<!--
        <a href="javascript:void(0)" onclick="javascript:code20.style.display='block'">Virtual memory</a>
             <br />
             <pre style="display: none" id="code20"><code class="sh">for 8G+ RAM Machine
@@ -435,14 +442,6 @@ System Properties(Win+Pause) - Advanced system settings - Advanced
 uncheck Automatically manage paging file - select No paging file - 
 click Set - OK restart
 </code></pre>
-
-
-
-      <a href="javascript:void(0)" onclick="javascript:code17.style.display='block'">Schemata</a>
-            <br />
-            <pre style="display: none" id="code17"><code class="java">auto.getDatabase().getSchemata() 
-</code></pre>
-
 
       <a href="javascript:void(0)" onclick="javascript:code23.style.display='block'">Creating Big Test Data</a>
             <br />
@@ -486,7 +485,7 @@ try (Box box = auto.cube()) {
     System.out.println(((byte[]) local.get("Bytes"))[1]);
 }</code></pre>
 
-
+-->
       <a href="javascript:void(0)" onclick="javascript:code22.style.display='block'">Dataset Combiner</a>
             <br />
             <pre style="display: none" id="code22"><code class="cs">//combining dataset
