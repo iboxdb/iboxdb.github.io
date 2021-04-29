@@ -133,6 +133,15 @@ Dual Core Application Database
   box.d("Table2", 88, "ABC").select(Product.class);  
 ```
 
+### Composite Key Supported
+
+ ```java
+ config.ensureTable(Item.class, "Item", "UID", "Type")
+ ```
+  
+![](images/compositekey.png)
+
+
 ### SQL Like
 
 ```cs
@@ -177,19 +186,19 @@ Dual Core Application Database
     combiner.Add( box.Select("from Member where Id == ?",id) )
 ```
 
-### Composite Key Supported
-
- ```java
- config.ensureTable(Item.class, "Item", "UID", "Type")
- ```
-  
-![](images/compositekey.png)
-
-
 ### Custom QueryFunction
 
 ```cs
   box.Select<Member>("from Member where [Tags]", new IFunction("Value"))
+```
+
+### Weak Object 
+
+```java
+ //Strongly typed
+box.select("from Table where Id > ?" , 1L);
+//Weak Object
+box.select("from Table where Id > ?" , new Variant("1"));  
 ```
 
 ### Compatible with LINQ (.NET)
@@ -207,6 +216,15 @@ Dual Core Application Database
    .collect(groupingBy(m -> m.group, summarizingLong(m -> m.value)))
 ```
 
+### Directly Select
+
+```cs
+  //Select records from a samll file directly
+  //without initializing database                   
+  IEnumerable records = DB.Select(fileAddress) 
+```
+
+
 ### Ason & Prototype Columns
 
 ```java
@@ -222,20 +240,6 @@ Dual Core Application Database
 ```
 
 
-### Mirror Copy
-
-```cs
-  auto.GetDatabase().CopyTo(new Mirror(bakAddr, bakRoot), buffer) 
-```
-
-### Directly Select
-
-```cs
-  //Select records from a samll file directly
-  //without initializing database                   
-  IEnumerable records = DB.Select(fileAddress) 
-```
-
 ### Transaction Huggers
 
 ```cs
@@ -246,14 +250,6 @@ Dual Core Application Database
   box3.Commit(); 
  ```
 
-### Weak Object 
-
-```java
- //Strongly typed
-box.select("from Table where Id > ?" , 1L);
-//Weak Object
-box.select("from Table where Id > ?" , new Variant("1"));  
-```
 
 ### Forward CRUD 
 
@@ -393,10 +389,24 @@ public class StartListener implements ServletContextListener {
  auto.delete("Table", 1L);  
  ```
 
- #### Schemata 
+### Schemata 
 
 ```java
-auto.getDatabase().getSchemata() 
+  auto.getDatabase().getSchemata() 
+```
+
+### Mirror Copy
+
+```cs
+  auto.GetDatabase().CopyTo(new Mirror(bakAddr, bakRoot), buffer) 
+```
+
+
+### Replication
+
+```java
+  BoxData.masterReplicate(masterB, data)
+  BoxData.slaveReplicate(slaveB, data)
 ```
 
 ### Automatic Object Mapping 
@@ -463,13 +473,14 @@ MySQL
 
 [Full Text Search C#](https://github.com/iboxdb/ftserver-cs)
 
+[.NET Linq, integrating with SQL ORM -XPO](https://sourceforge.net/p/datastorexpo/code/)
+
 [Blazor Wasm Client](https://github.com/iboxdb/aspnet-cross-platform-db/blob/master/blazorwasm/IApp.cs)
 
 [Gradle Demo jMonkeyEngine](https://github.com/iboxdb/jmegradle)
 
 [Nuget Package](https://www.nuget.org/packages/iBoxDB/)
 
-[.NET Linq, integrating with SQL ORM -XPO](https://sourceforge.net/p/datastorexpo/code/)
             
 
 <br />
