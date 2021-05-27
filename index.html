@@ -51,7 +51,7 @@
                 embedded database server cross-platform development.
                 support Blazor to store data on server or client. and can post database from client to server when online.
             </div>
-
+            <br>
             <h3>Description</h3>
 
             <div>
@@ -170,14 +170,14 @@
                 <br />
                 <h5>SQL Like</h5>
                 <div>
-                    <pre><code class="java">  /* 
+                    <pre><code class="cs">  /* 
   from TABLE where A&gt;? &amp; B&lt;=? order by C limit 0,10
 
   from [table] where [condition] 
                       order by [field1] desc,[field2] limit [0,10]
   [Condition:] == != &lt; &lt;= &gt; &gt;= &amp; | ( )
-  */ </code></pre>
-                    <pre><code class="cs">  box.Select&lt;Member&gt;(&quot;from Member where Name==?&quot;, &quot;MyName&quot;);</code></pre>
+  */   
+  box.Select&lt;Member&gt;(&quot;from Member where Name==?&quot;, &quot;MyName&quot;);</code></pre>
                     <pre><code class="java">  box.select(Member.class, &quot;from Member where Name==?&quot;, &quot;MyName&quot;); </code></pre>
 
                 </div>
@@ -286,8 +286,8 @@
                 <h5>Snapshot-Serializable Transaction</h5>
                 <table style="width: 100%">
                     <tr>
-                        <th style="width: 50%">Transaction Step</th>
-                        <th style="width: 50%">Isolation Level</th>
+                        <th>Transaction Step</th>
+                        <th>Isolation Level</th>
                     </tr>
                     <tr>
                         <td>Application Point</td>
@@ -297,37 +297,31 @@
                         <td>Database Point</td>
                         <td>Serializable</td>
                     </tr>
-
-                    <tr>
-
-                        <td colspan="2">
-                            <pre style="margin: 0px; padding: 0px;"><code class="cs">using(var box = auto.Cube()){
+                 
+                </table>
+                <pre style="margin: 0px; padding: 0px;"><code class="cs">using(var box = auto.Cube()){
   //Snapshot...
   box.Commit( ()=>{
     //Serializable...  
-  });                            
+  }); 
 }</code></pre>
-                        </td>
-                    </tr>
-                </table>
-
                 <br />
                 <h5>Update Increment</h5>
 
                 <table style="width: 100%">
                     <tr>
-                        <th ></th>
-                        <th style="font-weight: bold">UpdateIncrement</th>
-                        <th >AutoIncrement</th>
+                        <th> </th>
+                        <th style="font-weight: bold">Update Increment</th>
+                        <th>Auto Increment</th>
                     </tr>
                     <tr>
-                        <td>ApplyTo</td>
+                        <td>Apply To</td>
                         <td>index</td>
                         <td>key</td>
                     </tr>
                     <tr>
                         <td>Trigger</td>
-                        <td>insert/update</td>
+                        <td>insert / update</td>
                         <td>insert</td>
                     </tr>
                     <tr>
@@ -336,13 +330,13 @@
                         <td>number</td>
                     </tr>
                     <tr>
-                        <td>ValueFrom</td>
-                        <td>database newId(MaxPos,1)</td>
-                        <td>table max(ID)+1</td>
+                        <td>Value From</td>
+                        <td>database newId (MaxPos,1)</td>
+                        <td>table max (ID)+1</td>
                     </tr>
 
                     <tr>
-                        <td>GeneratorTime</td>
+                        <td>Generator Time</td>
                         <td>serializable transaction commit</td>
                         <td>data insert, differed from commit order</td>
                     </tr>
@@ -365,8 +359,8 @@
                     </tr>
                     <tr>
                         <td>Usage</td>
-                        <td>read/write different records</td>
-                        <td>read/write same record</td>
+                        <td>read / write different records</td>
+                        <td>read / write same record</td>
                     </tr>
                 </table>
 
@@ -378,10 +372,10 @@
                     </tr>
                     <tr>
                         <td style="margin: 0px; padding: 0px; vertical-align: top;">
-                            <pre style="margin: 0px; padding: 0px;"><code class="ss"> class BoxFileStreamConfig
- class BoxMemoryStreamConfig
- class ReadonlyStreamConfig
- class CacheStreamConfig </code></pre>
+                            <pre style="margin: 0px; padding: 0px;"><code class="cs"> <b>BoxFileStreamConfig</b>
+ BoxMemoryStreamConfig
+ ReadonlyStreamConfig
+ CacheStreamConfig </code></pre>
                         </td>
                     </tr>
                 </table>
@@ -391,21 +385,22 @@
                 C# &amp; JAVA,&nbsp;  <strong>place outside IDE working directory</strong> can get better performance
                 <pre><code class="cs">//different path has hugely different writing speed on VM.
 IBoxDB.LocalServer.DB.Root(&quot;/data/&quot;) </code></pre>
+				<br />
                 ASP.NET Cross Platform
                 <pre><code class="cs">DB.Root(MapPath(&quot;~/App_Data/&quot;))</code></pre>
-
+                <br />
                 Xamarin
                 <pre><code class="cs">DB.Root(System.Environment.GetFolderPath( 
        System.Environment.SpecialFolder.LocalApplicationData/Personal))</code></pre>
-
+				<br />
                 Unity3D
                 <pre><code class="cs">DB.Root(Application.persistentDataPath)</code></pre>
-
+                <br />
                 Android
                 <pre><code class="java">DB.root(android.os.Environment.getDataDirectory()
        .getAbsolutePath() + &quot;/data/&quot; + packageName + &quot;/&quot;) </code></pre>
 
-
+       			<br />
                 JSP WebApplication
                 <pre><code class="java">@WebListener()
 public class StartListener implements ServletContextListener {
@@ -463,14 +458,14 @@ MySQL
 
 				<br />
                 <h5>Supported Types</h5>
-                <table style="margin: 0px; padding: 0px; width: 100%">
+                <table style="margin: 0px; padding: 0px; width: 100%;">
                     <tr>
-                        <th style="width: 50%">.NET </th>
-                        <th style="width: 50%">JAVA </th>
+                        <th >.NET </th>
+                        <th >JAVA </th>
                     </tr>
                     <tr>
                         <td style="margin: 0px; padding: 0px; vertical-align: top;">
-                            <pre style="margin: 0px; padding: 0px;"><code class="diff"> bool
+                            <pre style="margin: 0px; padding: 0px; font-size:14px"><code class="diff"> bool
  char
  byte
  sbyte
@@ -479,9 +474,9 @@ MySQL
  int
  uint
  long
- ulong              
+ ulong
  float
- double        
+ double
  decimal
  DateTime
  Guid
@@ -495,7 +490,7 @@ MySQL
  int? 
  uint? 
  long? 
- ulong?      
+ ulong?
  float? 
  double? 
  decimal?
@@ -527,7 +522,7 @@ MySQL
                         </td>
 
                         <td style="margin: 0px; padding: 0px; vertical-align: top;">
-                            <pre style="margin: 0px; padding: 0px;"><code class="diff"> boolean 
+                            <pre style="margin: 0px; padding: 0px; font-size:14px"><code class="diff"> boolean 
  Boolean
  byte 
  Byte
@@ -575,7 +570,7 @@ MySQL
                     </tr>
                     <tr>
                     <td style="margin: 0px; padding: 0px; vertical-align: top;">
-                            <pre style="margin: 0px; padding: 0px;">
+                            <pre style="margin: 0px; padding: 0px; font-size:14px">
 <code class="cs">//Name
 *.Name
 
@@ -584,10 +579,11 @@ MySQL
 
 
 
-                            </code></pre>                           
+
+</code></pre>                           
                     </td>         
                     <td style="margin: 0px; padding: 0px; vertical-align: top;">
-                            <pre style="margin: 0px; padding: 0px;">
+                            <pre style="margin: 0px; padding: 0px; font-size:14px">
 <code class="java">//Name
 *.Name
 *.Name(val)
@@ -596,7 +592,7 @@ MySQL
 //name
 *.name
 *.name(val)
-*.setname(val) </code></pre>
+*.setname(val)</code></pre>
                     </td>
                     </tr>
                 </table>
@@ -663,7 +659,7 @@ MySQL
     </div>
     <!-- Key Words -->
     <div style="width: 1px; height: 1px; overflow: hidden">
-       Update 5-2-2021.
+       Update 5-27-2021.
 <img src="https://s05.flagcounter.com/mini/Ep/bg_373737/txt_F2F2F2/border_373737/flags_0/"  border="0">
     </div>
 
