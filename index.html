@@ -52,7 +52,7 @@
                 support Blazor to store data on server or client. and can post database from client to server when online.
             </div>
 
-            <h3>Project Description</h3>
+            <h3>Description</h3>
 
             <div>
             <p>iBoxDB is a fast acid table-style document NoSQL Embedded Database, easily store objects and documents, traditional table with unstructured data, zero configuration, pure JAVA and DotNET engines, no dependencies.</p>
@@ -275,20 +275,19 @@
                 </div>
 
                 <br />
-                <h5>Snapshot-Serializable Transaction</h5>
-                <table>
-                    <tr>
-                        <th>Transaction Step</th>
-                        <th>Isolation Level</th>
+                <h5>Replication</h5>
+                <pre><code class="java">  //Master-Master
+  BoxData.masterReplicate();  
+  //Master-Slave
+  BoxData.slaveReplicate();</code></pre>
+                </div>
 
-                        <td rowspan="3">
-                            <pre style="margin: 0px; padding: 0px;"><code class="cs">using(var box = auto.Cube()){
-  //Snapshot...
-  box.Commit( ()=>{
-    //Serializable...  
-  });                            
-}</code></pre>
-                        </td>
+                <br />
+                <h5>Snapshot-Serializable Transaction</h5>
+                <table style="width: 100%">
+                    <tr>
+                        <th style="width: 50%">Transaction Step</th>
+                        <th style="width: 50%">Isolation Level</th>
                     </tr>
                     <tr>
                         <td>Application Point</td>
@@ -298,84 +297,88 @@
                         <td>Database Point</td>
                         <td>Serializable</td>
                     </tr>
+
+                    <tr>
+
+                        <td colspan="2">
+                            <pre style="margin: 0px; padding: 0px;"><code class="cs">using(var box = auto.Cube()){
+  //Snapshot...
+  box.Commit( ()=>{
+    //Serializable...  
+  });                            
+}</code></pre>
+                        </td>
+                    </tr>
                 </table>
 
-
+                <br />
                 <h5>Update Increment</h5>
 
-                <table>
+                <table style="width: 100%">
                     <tr>
-                        <th></th>
-                        <th>Apply To </th>
-                        <th>Trigger </th>
-                        <th>Type </th>
+                        <th ></th>
+                        <th style="font-weight: bold">UpdateIncrement</th>
+                        <th >AutoIncrement</th>
                     </tr>
                     <tr>
-                        <td style="font-weight: bold">UpdateIncrement</td>
-                        <td style="white-space: nowrap">non-primary key</td>
+                        <td>ApplyTo</td>
+                        <td>index</td>
+                        <td>key</td>
+                    </tr>
+                    <tr>
+                        <td>Trigger</td>
                         <td>insert/update</td>
-                        <td>long</td>
+                        <td>insert</td>
                     </tr>
                     <tr>
-                        <td>AutoIncrement</td>
-                        <td>primary key</td>
-                        <td>insert</td>
+                        <td>Type</td>
+                        <td>long</td>
                         <td>number</td>
                     </tr>
+                    <tr>
+                        <td>ValueFrom</td>
+                        <td>database newId(MaxPos,1)</td>
+                        <td>table max(ID)+1</td>
+                    </tr>
 
                     <tr>
-                        <th></th>
-                        <th>Value From </th>
-                        <th colspan="2">Generator Time</th>
+                        <td>GeneratorTime</td>
+                        <td>serializable transaction commit</td>
+                        <td>data insert, differed from commit order</td>
                     </tr>
-                    <tr>
-                        <td style="font-weight: bold">UpdateIncrement</td>
-                        <td>Database NewId(MaxPos,1)</td>
-                        <td colspan="2">Serializable Transaction Commit</td>
-                    </tr>
-                    <tr>
-                        <td>AutoIncrement</td>
-                        <td>Table Max(ID)+1</td>
-                        <td colspan="2">Data Insert, Differed from Commit order</td>
-                    </tr>
+
                 </table>
 
+                <br />
                 <h5>Selecting Tracer</h5>
 
-                <table>
+                <table style="width: 100%">
                     <tr>
-                        <th></th>
-                        <th>Thread </th>
-                        <th>Usage </th>
+                        <th ></th>
+                        <th style="font-weight: bold">Tracer</th>
+                        <th >Locker</th>
                     </tr>
                     <tr>
-                        <td style="font-weight: bold">Tracer</td>
-                        <td>non-blocked </td>
-                        <td>read/write different records </td>
+                        <td >Thread</td>
+                        <td>non-blocked</td>
+                        <td>blocked</td>
                     </tr>
                     <tr>
-                        <td>Locker </td>
-                        <td>blocked </td>
-                        <td>read/write same record </td>
+                        <td>Usage</td>
+                        <td>read/write different records</td>
+                        <td>read/write same record</td>
                     </tr>
                 </table>
 
+                <br />
                 <h5>IO</h5>
-                <table style="margin: 0px; padding: 0px; width: 90%">
+                <table style="margin: 0px; padding: 0px; width: 100%">
                     <tr>
-                        <th>.NET </th>
-                        <th>JAVA </th>
+                        <th>IO</th>
                     </tr>
                     <tr>
                         <td style="margin: 0px; padding: 0px; vertical-align: top;">
                             <pre style="margin: 0px; padding: 0px;"><code class="ss"> class BoxFileStreamConfig
- class BoxMemoryStreamConfig
- class ReadonlyStreamConfig
- class CacheStreamConfig </code></pre>
-                        </td>
-
-                        <td style="margin: 0px; padding: 0px; vertical-align: top;">
-                            <pre style="margin: 0px; padding: 0px;"><code class="ss"> class BoxFileStreamConfig 
  class BoxMemoryStreamConfig
  class ReadonlyStreamConfig
  class CacheStreamConfig </code></pre>
@@ -460,10 +463,10 @@ MySQL
 
 				<br />
                 <h5>Supported Types</h5>
-                <table style="margin: 0px; padding: 0px; width: 90%">
+                <table style="margin: 0px; padding: 0px; width: 100%">
                     <tr>
-                        <th>.NET </th>
-                        <th>JAVA </th>
+                        <th style="width: 50%">.NET </th>
+                        <th style="width: 50%">JAVA </th>
                     </tr>
                     <tr>
                         <td style="margin: 0px; padding: 0px; vertical-align: top;">
@@ -501,7 +504,8 @@ MySQL
  string 
        
  //non-indexable
- Dictionary&lt;string, object&gt;
+ Dictionary
+ &lt;string, object&gt;
  MemoryStream
  byte[]
  string[]
@@ -548,7 +552,8 @@ MySQL
  String
  
  //non-indexable
- HashMap&lt;String,Object&gt;
+ HashMap
+ &lt;String,Object&gt;
  MemoryStream
  byte[]
  Object[]
@@ -561,7 +566,8 @@ MySQL
 
 
 
-                            </code></pre>
+
+</code></pre>
                         </td>
                     </tr>
                     <tr>
@@ -595,11 +601,7 @@ MySQL
                     </tr>
                 </table>
 
-                <br />
-                <h5>Replication Master-Slave , Master-Master</h5>
-                <img src="images/p1.png" alt="Database Replication" />
-                <br />
-
+                <br />              
                 <h5>Cross Platform</h5>
                 <img src="images/p3.png" alt="NoSQL Application Database for JAVA, .NET, Android, Mono, Unity3D, Xamarin, Linux, Windows" />
 
@@ -661,7 +663,7 @@ MySQL
     </div>
     <!-- Key Words -->
     <div style="width: 1px; height: 1px; overflow: hidden">
-       Update 5-27-2021.
+       Update 5-2-2021.
 <img src="https://s05.flagcounter.com/mini/Ep/bg_373737/txt_F2F2F2/border_373737/flags_0/"  border="0">
     </div>
 
