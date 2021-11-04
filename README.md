@@ -409,6 +409,42 @@ public class StartListener implements ServletContextListener {
   BoxData.slaveReplicate(slaveB, data)
 ```
 
+### Changed Values 
+
+```cs
+using IBoxDB.LocalServer.Replication;
+DB db = new DB();
+db.SetBoxRecycler(
+  (Socket socket, BoxData outBox, bool normalPoweroff) => {
+    if (socket.Actions > 0) {
+      foreach (var e in outBox.GetActions()) {
+        var actionType = e.ActionType;
+        var key = e.Key;
+        if (actionType == ActionType.Begin) {
+	      continue;
+        }
+
+        var tableName = e.TableName;
+        var value = e.Select();
+        Log (actionType + " '" + tableName + "' at key '" + key 
+          + "' \r\n" + DB.ToString (value));
+}}});
+```
+
+### Multiple Applications 
+
+```java
+static DB db = new DB(db_id);
+//for LockFile Supported Platform only
+db.WaitAnotherApp(1000 * 60 * 5);
+
+using (var auto = db.Open()){
+   ...
+   //auto.Cube(); Insert(), Update()...
+}
+```
+
+
 ### Automatic Object Mapping 
 
  Method | Column
@@ -467,11 +503,16 @@ MySQL
 
 
 
+## Search Engines
+
+[Full Text Search Engine Java](https://github.com/iboxdb/ftserver)
+
+[Full Text Search Engine .NET](https://github.com/iboxdb/ftserver-cs)
+
+[Self-hosted Search Engine Android](https://sourceforge.net/projects/ftserver-android/)
+
+
 ## Links
-
-[Full Text Search Java](https://github.com/iboxdb/ftserver)
-
-[Full Text Search C#](https://github.com/iboxdb/ftserver-cs)
 
 [.NET Linq, integrating with SQL ORM -XPO](https://sourceforge.net/p/datastorexpo/code/)
 

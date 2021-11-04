@@ -264,40 +264,6 @@ box.Select<User>("from User where Version>? limit 0,1000", last)
    });
 ```
 
-### Changed Values 
-
-```cs
-using IBoxDB.LocalServer.Replication;
-DB db = new DB();
-db.SetBoxRecycler(
-  (Socket socket, BoxData outBox, bool normalPoweroff) => {
-    if (socket.Actions > 0) {
-      foreach (var e in outBox.GetActions()) {
-        var actionType = e.ActionType;
-        var key = e.Key;
-        if (actionType == ActionType.Begin) {
-	      continue;
-        }
-
-        var tableName = e.TableName;
-        var value = e.Select();
-        Log (actionType + " '" + tableName + "' at key '" + key 
-          + "' \r\n" + DB.ToString (value));
-}}});
-```
-
-### Multiple Applications 
-
-```java
-static DB db = new DB(db_id);
-//for LockFile Supported Platform only
-db.WaitAnotherApp(1000 * 60 * 5);
-
-using (var auto = db.Open()){
-   ...
-   //auto.Cube(); Insert(), Update()...
-}
-```
 
 ### Big Cache 
 
