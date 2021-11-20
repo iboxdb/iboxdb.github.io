@@ -276,6 +276,20 @@ box.Select<User>("from User where Version>? limit 0,1000", last)
  //1024*1024*1024*3
 ```
 
+
+### Mobile Cache
+
+```java
+ DB.root(path);
+ DB db =  new DB();
+ DatabaseConfig config = db.getConfig();
+ //mobiles have only 256MB memory, set Cache to 16 or 32MB.
+ config.CacheLength = config.mb(32);
+ config.FileIncSize = 1024 * 64;
+ config.ReadStreamCount = 1;
+ App.auto = db.open();
+```
+
 ### Dataset Combiner 
 
 ```cs
