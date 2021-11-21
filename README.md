@@ -1,7 +1,9 @@
 
 ![](images/ico2.png)
 
-# iBoxDB
+# e^d = Ne^(Kd)  [2021-11-21]
+
+# iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
 
