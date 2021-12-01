@@ -32,10 +32,10 @@ Dual Core Application Database
 
 
 
-[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iBoxDBv30_30.zip&selected=pilotfiber)
+[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iBoxDBv31_31.zip&selected=pilotfiber)
 
 
-[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iBoxDBv30_30.zip)
+[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iBoxDBv31_31.zip)
 
 
 [Website Mirror https://iboxdb.github.io/](https://iboxdb.github.io/)
@@ -390,6 +390,18 @@ public class StartListener implements ServletContextListener {
  auto.update("Table", record);
  auto.delete("Table", 1L);  
  ```
+
+### Memory Usage
+
+```java
+ DatabaseConfig cfg = db.getConfig();
+ //Cache Memory, set less 1/3 total
+ cfg.CacheLength = cfg.mb(1024L);
+ //Read Pool, set **8+** to low memory machine
+ cfg.ReadStreamCount = 8;
+ //Write Pool, set **4-** to low memory machine
+ cfg.WriteStreamCount = 1;
+```
 
 ### Schemata 
 
