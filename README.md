@@ -471,6 +471,14 @@ using (var auto = db.Open()){
  *.name(val) | name
  *.setname(val) | name
 
+ ```java
+ DatabaseConfig cfg;
+ //Create Table
+ ensureTable(Record.class, "Table", "Id");
+ //Create Index with length 64
+ ensureIndex(Record.class, "Table", "Name(64)");
+ ```
+
 
 ### Install
 
