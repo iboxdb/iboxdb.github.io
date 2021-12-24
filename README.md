@@ -5,7 +5,7 @@
 
 ### ; N = u^d;   e^k = e(u^-1);   e^d = u(e^d)(u^-1); 
 
-### if u=R^1:   1 = (u^d)(u^-1)^d = N(u^-1)^d = N(cos(A)^d); 
+### if u=R^1:   1 = (u^d)((u^-1)^d) = N((u^-1)^d) = N(cos(A)^d); 
 
 ### if N=3, d=2:   Nu = u^N; 
 
