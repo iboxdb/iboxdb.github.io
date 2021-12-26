@@ -1,15 +1,8 @@
 
 ![](images/ico2.png)
 
-# e^d = Ne^(Kd)  [2021-11-21]
+# e^d = Ne^(Kd)  [2021-11-21]   0^0-e-LD-time-WE-light-HD  [2021-11-26]
 
-### ; N = u^d;   e^k = e(u^-1);   e^d = u(e^d)(u^-1); 
-
-### if u=R^1:   1 = (u^d)((u^-1)^d) = N((u^-1)^d) = N(cos(A)^d); 
-
-### if N=3, d=2:   Nu = u^N; 
-
-### [2021-12-21, 2021-12-23]
 
 # iBoxDB  
 
