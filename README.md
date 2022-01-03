@@ -1,7 +1,7 @@
 
 ![](images/ico2.png)
 
-# e^d = Ne^(Kd)  [2021-11-21]   0^0-e-LD-time-WE-light-HD  [2021-12-26]
+# e^d = Ne^(Kd)  [2021-11-21]   0^0-e-LD-time-WE-light-HD  [2021-12-26]  e^(d+1) = Ne^(d+ln(e/N)) [2022-01-03] 
 
 
 # iBoxDB  
