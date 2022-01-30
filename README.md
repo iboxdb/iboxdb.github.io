@@ -3,6 +3,7 @@
 
 # e^d = Ne^(Kd)  [2021-11-21]   0^0-e-LD-time-WE-light-HD  [2021-12-26]  e^(d+1) = Ne^(d+ln(e/N)) [2022-01-03] 
 
+# C = |e^(Xi)|;   time = e^(Xi) - e^(0i)  [2022-01-29] 
 
 # iBoxDB  
 
