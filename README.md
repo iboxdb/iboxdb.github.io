@@ -11,7 +11,7 @@
 
 ### Ct = P = Ct'; t' = tk, Ctk = P' [2022-03-09];
 
-### F = [LD,HD,WE] = [ i+e^0, -i+e^0, -1-e^0 ] = Rainbow Gravity. [2022-03-06];   
+### F = [LD,HD,WE] = Rainbow Gravity. [2022-03-06];   
 
 ### F = 0 = Space Super High Way;
 
