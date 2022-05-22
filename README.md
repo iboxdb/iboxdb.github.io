@@ -65,7 +65,7 @@ Dual Core Application Database
 * Concurrency control, thread safe
 * Multiple applications supported
 * Memory management
-* Scalable hot MasterMaster and MasterSlave replications
+* Programmable replication
 * Hot mirror copy
 * On disk and in memory databases supported
 * Automatically create databases
@@ -409,9 +409,11 @@ public class StartListener implements ServletContextListener {
  DatabaseConfig cfg = db.getConfig();
  //Cache Memory, set less 1/3 total
  cfg.CacheLength = cfg.mb(1024L);
- //Read Pool, set **8+** to low memory machine
+ //Mobile Device 64MB 
+ cfg.CacheLength = cfg.mb(64L);
+ //Read Pool, set **8+** to low Cache machine
  cfg.ReadStreamCount = 8;
- //Write Pool, set **4-** to low memory machine
+ //Write Pool, set **4-** to low Cache machine
  cfg.WriteStreamCount = 1;
 ```
 
@@ -428,11 +430,11 @@ public class StartListener implements ServletContextListener {
 ```
 
 
-### Replication
+### Programmable Replication
 
 ```java
-  BoxData.masterReplicate(masterB, data)
-  BoxData.slaveReplicate(slaveB, data)
+  BoxData.masterReplicate()
+  BoxData.slaveReplicate()
 ```
 
 ### Changed Values 
@@ -518,16 +520,10 @@ MySQL
 
 ### Benchmark Code
 
-[Version 3.0 With MySQL Java Maven](https://sourceforge.net/p/teadb/code/)
+[With MySQL Java Maven](https://sourceforge.net/p/teadb/code/)
 
 
-[Version 3.0 With SQLite C#](https://sourceforge.net/p/benchmarksql3/code/)
-
-
-[Version 2.X With MySQL Java Maven](https://github.com/iboxdb/teadb)
-
-                
-[Version 2.X With SQLite C#](https://github.com/iboxdb/benchmarksql)
+[With SQLite C# Dotnet](https://sourceforge.net/p/benchmarksql3/code/)
 
 
 
@@ -548,14 +544,13 @@ MySQL
 
 ## Links
 
-[.NET Linq, integrating with SQL ORM -XPO](https://sourceforge.net/p/datastorexpo/code/)
-
 [Blazor Wasm Client](https://github.com/iboxdb/aspnet-cross-platform-db/blob/master/blazorwasm/IApp.cs)
 
 [Gradle Demo jMonkeyEngine](https://github.com/iboxdb/jmegradle)
 
 [Nuget Package](https://www.nuget.org/packages/iBoxDB/)
 
+[.NET Linq, integrating with SQL ORM -XPO](https://sourceforge.net/p/datastorexpo/code/)
             
 
 <br />
