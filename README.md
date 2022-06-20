@@ -44,10 +44,10 @@ Dual Core Application Database
 
 
 
-[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iboxdb332.zip&selected=pilotfiber)
+[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iboxdb350.zip&selected=pilotfiber)
 
 
-[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iboxdb332.zip)
+[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iboxdb350.zip)
 
 
 [Website Mirror https://iboxdb.github.io/](https://iboxdb.github.io/)
@@ -489,8 +489,8 @@ using (var auto = db.Open()){
  DatabaseConfig cfg;
  //Create Table
  ensureTable(Record.class, "Table", "Id");
- //Create Index with length 64
- ensureIndex(Record.class, "Table", "Name(64)");
+ //Create Index with length 32
+ ensureIndex(Record.class, "Table", "Name(32)");
  ```
 
 
