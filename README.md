@@ -175,7 +175,14 @@ Dual Core Application Database
 ```cs
   //query
   box.Select("from Member");
-  //load to memory first, startswith '*'
+```
+
+#### Query Options
+
+```cs
+  //load to memory first, startswith '*'.
+  //because the OS has read-ahead setting, 
+  //normally don't need to load first.  
   box.Select("*from Member");
   //selecting tracer, startswith '!'
   box.Select("!from Member")  
@@ -206,6 +213,14 @@ Dual Core Application Database
   box.Select<Member>("from Member where [Tags]", new IFunction("Value"))
 ```
 
+### Custom Object Table Binding
+
+```cs
+  public bool Insert(Member m){
+    return auto.Insert(nameof(Member), m);
+  }
+```
+
 ### Weak Object 
 
 ```java
@@ -230,14 +245,6 @@ box.select("from Table where Id > ?" , new Variant("1"));
    .collect(groupingBy(m -> m.group, summarizingLong(m -> m.value)))
 ```
 
-### Directly Select
-
-```cs
-  //Select records from a samll file directly
-  //without initializing database                   
-  IEnumerable records = DB.Select(fileAddress) 
-```
-
 
 ### Ason & Prototype Columns
 
@@ -253,6 +260,20 @@ box.select("from Table where Id > ?" , new Variant("1"));
   //Output: class java.lang.Long
 ```
 
+### Hot Mirror Copy
+
+```cs
+  auto.GetDatabase().CopyTo(bakAddr, bakRoot, buffer) 
+```
+
+### Directly Select
+
+```cs
+  //Select records from a samll file directly
+  //without initializing database                   
+  IEnumerable records = DB.Select(fileAddress) 
+```
+
 
 ### Transaction Huggers
 
@@ -263,6 +284,14 @@ box.select("from Table where Id > ?" , new Variant("1"));
   box2.Commit(huggersBuffer);
   box3.Commit(); 
  ```
+
+  
+### Programmable Replication
+
+```java
+  BoxData.masterReplicate()
+  BoxData.slaveReplicate()
+```
 
 
 ### Forward CRUD 
@@ -330,6 +359,9 @@ CacheStreamConfig |
 
 ```cs
 //different path has hugely different writing speed on VM.
+//Create Directory before putting DB inside.
+//new File(path).mkdirs(); 
+//Directory.CreateDirectory(path)
 IBoxDB.LocalServer.DB.Root("/data/") 
 ```
 
@@ -423,19 +455,6 @@ public class StartListener implements ServletContextListener {
   auto.getDatabase().getSchemata() 
 ```
 
-### Mirror Copy
-
-```cs
-  auto.GetDatabase().CopyTo(new Mirror(bakAddr, bakRoot), buffer) 
-```
-
-
-### Programmable Replication
-
-```java
-  BoxData.masterReplicate()
-  BoxData.slaveReplicate()
-```
 
 ### Changed Values 
 

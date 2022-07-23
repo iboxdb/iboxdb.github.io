@@ -441,3 +441,8 @@ static void Main(string[] args)
  byte[] |
  Object[] |
 
+
+ ```
+Indexing for byte[] or others, 
+using ToBase64String(byte[]) Converts it to String. 
+ ```
