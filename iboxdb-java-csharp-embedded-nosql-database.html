@@ -710,7 +710,11 @@ static void Main(string[] args)
       }
     }).render('#paypal-button-container');
   }
-  initPayPalButton();
+  try{
+    initPayPalButton();
+  }
+  catch(pp){
+  }
   </script>
 
 
