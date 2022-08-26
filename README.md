@@ -15,7 +15,7 @@
 
 ### F = 0 = Space Super High Way;
 
-### delta(m) / delta(t) = one ton electrons in coil.
+### delta(m) / delta(t) = one ton electrons in belly coil.
 
 # iBoxDB  
 
