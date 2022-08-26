@@ -15,6 +15,8 @@
 
 ### F = 0 = Space Super High Way;
 
+### delta(m) / delta(t) = one ton electrons in coil.
+
 # iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
