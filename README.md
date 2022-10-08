@@ -11,9 +11,9 @@
 
 ### Ct = P = Ct'; t' = tk, Ctk = P' [2022-03-09];
 
-### F = [LD,HD,WE] = Rainbow Gravity. [2022-03-06];   
+### F = [Spinning 0^0,LD,WE,HD] = Rainbow Gravity. [2022-03-06];   
 
-### F = 0 = Space Super High Way;
+### F = 0 = Space Super High Way = [cos(lr,LD) == cos(hr,HD)];
 
 ### delta(m) / delta(t) = one ton electrons in belly coil.
 
