@@ -48,10 +48,10 @@ Dual Core Application Database
 
 
 
-[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iboxdb350.zip&selected=pilotfiber)
+[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iboxdb360.zip&selected=pilotfiber)
 
 
-[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iboxdb350.zip)
+[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iboxdb360.zip)
 
 
 [Website Mirror https://iboxdb.github.io/](https://iboxdb.github.io/)
