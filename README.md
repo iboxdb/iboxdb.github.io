@@ -11,6 +11,8 @@
 
 ### Ct = P = Ct'; t' = tk, Ctk = P' [2022-03-09];
 
+### Ft = L = F't'; F'=(-F); t'=0-t, t=0-t'; dipolar events. [2023-03-03];
+
 ### F = [Spinning 0^0,LD,WE,HD] = Rainbow Gravity. [2022-03-06];
 
 ### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
