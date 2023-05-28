@@ -21,6 +21,9 @@
 
 ### delta(m) / delta(t) = one ton electrons in belly coil.
 
+### S'(t)=speed(line); S''(t)=force(circle); S'''(t)=gravity(shape)=e^d. [2023-05-27];
+
+
 # iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
