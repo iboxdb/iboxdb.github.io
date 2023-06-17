@@ -374,8 +374,8 @@ CacheStreamConfig |
 IBoxDB.LocalServer.DB.Root("/data/") 
 ```
 
-**Important: Add this Database Path as Exclusion into Scan-System, 
-these systems are not designed for high performance, for example, Windows Defender.**
+Add this Database Path as Exclusion into Scan-System to get higher performance,
+for example, System Defender.
 
 #### ASP.NET Cross Platform 
 
