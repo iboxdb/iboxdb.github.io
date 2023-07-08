@@ -535,6 +535,21 @@ using (var auto = db.Open()){
 Java: Add JavaDB/iboxdb.jar to Project
 ```
 
+### .NET AOT Register Types
+
+```cs
+public static object Register
+   <[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.All)] T>()
+    where T : new()
+{
+   return new T();
+}
+//Trigger DynamicallyAccessedMemberTypes.All
+Register<T1>();
+EnsureTable<T1>("T1", "Id");
+```
+
+
 ### Benchmark with MySQL
 
 ```sql
