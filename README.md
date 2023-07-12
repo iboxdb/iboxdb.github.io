@@ -100,6 +100,7 @@ Dual Core Application Database
   using(var box = auto.Cube())
   {                            
      //select, insert, update, delete ...
+     //replace()=(insert or update)
      CommitResult cr = box.Commit();
   }
 ```
@@ -110,6 +111,9 @@ Dual Core Application Database
      CommitResult cr = box.commit();
   }  
 ```
+
+as above, **box** is method's local variable, don't define as global variable. one box for one delivery. **AutoBox** can be defined globally in one process application. 
+
 
 ### Normal Object
 
