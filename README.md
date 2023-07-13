@@ -112,7 +112,7 @@ Dual Core Application Database
   }  
 ```
 
-as above, **box** is method's local variable, don't define as global variable. one box for one delivery. **AutoBox** can be defined globally in one process application. 
+as above, **box** is method's local variable, don't define as global variable. one box for one delivery. **AutoBox** can be defined globally in single application. 
 
 
 ### Normal Object
