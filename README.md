@@ -13,6 +13,8 @@
 
 ### Ft = L = F't'; F'=(-F); t'=0-t, t=0-t'; dipolar events. [2023-03-03];
 
+### F' = ma' = m(V1-V0)/1 = m(C-V0) = observer deviation. [2023-11-10];
+
 ### F = [Spinning 0^0,LD,WE,HD] = Rainbow Gravity. [2022-03-06];
 
 ### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
