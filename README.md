@@ -15,6 +15,8 @@
 
 ### F' = ma' = m(V1-V0)/1 = m(C-V0) = observer deviation. [2023-11-10];
 
+#### each time one eats, the fate changed a bit. before time were clouds, life was born at first glance.
+
 ### F = [Spinning 0^0,LD,WE,HD] = Rainbow Gravity. [2022-03-06];
 
 ### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
