@@ -29,6 +29,9 @@
 
 #### board a plane on the air to another spacetime. [2023-11-15];
 
+### Twins: P = mV = (m0, V0) + (m1, V1) - (m2, -V2). [2023-11-19]; 
+
+#### use Twins to build High-Time and Low-Time, to eliminate Light-Time and Mass. [2023-11-19]; 
 
 # iBoxDB  
 
