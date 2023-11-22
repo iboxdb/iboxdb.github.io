@@ -35,6 +35,8 @@
 
 #### cos(ratio,volume) of speedtime. positive volume object has Mass(time-lines). negative volume object faster than light(teleport). [2023-11-21]; 
 
+#### light-speed with fast-time possible in big volume. [2023-11-22]; 
+
 # iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
