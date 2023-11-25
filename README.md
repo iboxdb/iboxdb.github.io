@@ -37,6 +37,8 @@
 
 #### light-speed with fast-time possible in big volume. [2023-11-22]; 
 
+#### leaving increases speed, closing increases time. [2023-11-24]; 
+
 # iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
