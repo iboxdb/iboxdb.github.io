@@ -33,6 +33,8 @@
 
 #### use Twins to build High-Time and Low-Time, to mitigate Light-Time and Mass. [2023-11-19]; 
 
+#### cut Coil to Two to build Twins-photon, by making e-field parallel to b-field(observer effect). [2024-08-14]; 
+
 #### cos(ratio,volume) of speedtime. positive volume object has Mass(time-lines). negative volume object faster than light(teleport). [2023-11-21]; 
 
 #### light-speed with fast-time possible in big volume. [2023-11-22]; 
