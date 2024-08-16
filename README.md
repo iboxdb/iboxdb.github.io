@@ -45,7 +45,9 @@
 
 #### leaving increases speed, closing increases time. [2023-11-24]; 
 
-#### initial kick: f( t1, x1 ) = g( t0, x0, y0, z0, ...universe0 ). distance(x1,z0) less than dist(y0,z0) + dist(z0,x1). [2024-07-21]; 
+### initial kick: f( t1, x1 ) = g( t0, x0, y0, z0, ...geo ). [2024-07-21]; 
+
+### Creation = N(movement to chaos) - M(chaos to movement). [2024-08-16];
 
 # iBoxDB  
 
