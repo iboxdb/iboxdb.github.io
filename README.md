@@ -37,6 +37,8 @@
 
 #### b-field = relative movement, twist b-field = movement. [2024-08-15];
 
+### dot( V, curl(E) ) = dot( E, curl(V) ). [2024-08-16];
+
 #### cos(ratio,volume) of speedtime. positive volume object has Mass(time-lines). negative volume object faster than light(teleport). [2023-11-21]; 
 
 #### light-speed with fast-time possible in big volume. [2023-11-22]; 
