@@ -33,7 +33,7 @@
 
 #### use Twins to build High-Time and Low-Time, to mitigate Light-Time and Mass. [2023-11-19]; 
 
-#### cut Coil to Two to build Twins-photon, by making e-field parallel to b-field(observer effect). [2024-08-14]; 
+#### reverse current middled in Coil to build Twins-photon, norms of U-D surfaces outward to get zero field solid.  [2024-08-14],[2024-09-03]; 
 
 #### b-field = relative movement, twist b-field = movement. [2024-08-15];
 
