@@ -7,6 +7,8 @@
 
 ### projection { x = x*cos( a ) + k*cos( XtoK + a ) } [2025-01-28] @Bruce Yang CL-N;
 
+### geocentrism - heliocentrism - entropycentrism - triocentrism  [2025-02-03]
+
 ### [ -0.5, 0.5 ]{ ds/dt = v / sin(v) = flat : 1 / sin(v) = 1 / v }  [2024-12-23]
 
 ### 0^0-e-LD-time-WE-light-HD  [2021-12-26];  e^(d+1) = Ne^(d+ln(e/N)) [2022-01-03]; 
