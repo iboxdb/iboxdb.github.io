@@ -13,9 +13,11 @@
 
 ### 0^0-e-LD-time-WE-light-HD  [2021-12-26];  e^(d+1) = Ne^(d+ln(e/N)) [2022-01-03]; 
 
-### C = |e^(Xi)|;   time = e^(Xi) - e^(0i)  [2022-01-29]; 
+### |C| = |e^(Xi)|;   time = e^(Xi) - e^(0i)  [2022-01-29]; 
 
 ### Ct = P = Ct'; t' = tk, Ctk = P' [2022-03-09];
+
+### ( -V + C )cos( y, d1 ) = C = ( V + C )cos( y, d2 ) [2025-02-08];
 
 ### Ft = L = F't'; F'=(-F); t'=0-t, t=0-t'; dipolar events. [2023-03-03];
 
