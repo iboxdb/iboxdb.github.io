@@ -29,6 +29,8 @@
 
 ### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
 
+#### d(C^2) = d( V(x,y,z)V(x,y,z) ) = V(x,y,z)A(x,y,z) = 0, all movement have orthogonal acceleration.  [2025-05-17];
+
 ### F = 0 = Space Super High Way = [cos(lr,LD) == cos(hr,HD)];
 
 ### delta(m) / delta(t) = one ton electrons in belly coil.
