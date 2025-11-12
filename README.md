@@ -61,6 +61,8 @@
 
 ### Creation = N(movement to chaos) - M(chaos to movement). [2024-08-16];
 
+### geometric conservation: Moving = X-Y (B-E field) reverse. [2025-11-12]; 
+
 # iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
