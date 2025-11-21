@@ -63,6 +63,11 @@
 
 ### geometric conservation: Moving = X-Y (B-E field) reverse. [2025-11-12]; 
 
+### curl(B) = (dE / dt) / (C^2) .. (dE / dt) = (C^2)curl(B) = curl(B+A). [2025-11-21];
+
+#### F(A) = J(E). A is the movement from geometry. 
+
+
 # iBoxDB  
 
 ## Fast ACID Table-Style Document NoSQL Database
