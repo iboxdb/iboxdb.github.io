@@ -1,5 +1,5 @@
 
-![](images/ico2.png)
+#### movement is self-repairing design of being.  [2026-01-16];
 
 ### e^d = Ne^(Kd)  [2021-11-21];  
 
