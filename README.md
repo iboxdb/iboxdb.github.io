@@ -1,47 +1,47 @@
 
-#### movement is self-repairing design of being.  [2026-01-16];
+### Movement is self-repairing design of Being.  [2026-01-16];
 
-### e^d = Ne^(Kd)  [2021-11-21];  
+#### e^d = Ne^(Kd)  [2021-11-21];  
 
-### cos(y,d) { (1/2) ( y^(1/d) + (y^(-1/d)) ( 1 - (1-y)^(2/d) ) ) }  [2022-03-11] @Bruce Yang CL-N; 
+#### cos(y,d) { (1/2) ( y^(1/d) + (y^(-1/d)) ( 1 - (1-y)^(2/d) ) ) }  [2022-03-11] @Bruce Yang CL-N; 
 
-### projection { x = x*cos( a ) + k*cos( XtoK + a ) } [2025-01-28] @Bruce Yang CL-N;
+#### projection { x = x*cos( a ) + k*cos( XtoK + a ) } [2025-01-28] @Bruce Yang CL-N;
 
-### geocentrism - heliocentrism - entropycentrism - triocentrism  [2025-02-03]
+#### geocentrism - heliocentrism - entropycentrism - triocentrism  [2025-02-03]
 
-### [ -0.5, 0.5 ]{ ds/dt = v / sin(v) = flat : 1 / sin(v) = 1 / v }  [2024-12-23]
+#### [ -0.5, 0.5 ]{ ds/dt = v / sin(v) = flat : 1 / sin(v) = 1 / v }  [2024-12-23]
 
-### 0^0-e-LD-time-WE-light-HD  [2021-12-26];  e^(d+1) = Ne^(d+ln(e/N)) [2022-01-03]; 
+#### 0^0-e-LD-time-WE-light-HD  [2021-12-26];  e^(d+1) = Ne^(d+ln(e/N)) [2022-01-03]; 
 
-### |C| = |e^(Xi)|;   time = e^(Xi) - e^(0i)  [2022-01-29]; 
+#### |C| = |e^(Xi)|;   time = e^(Xi) - e^(0i)  [2022-01-29]; 
 
-### Ct = P = Ct'; t' = tk, Ctk = P' [2022-03-09];
+#### Ct = P = Ct'; t' = tk, Ctk = P' [2022-03-09];
 
-### ( -V + C )cos( y, d1 ) = C = ( V + C )cos( y, d2 ) [2025-02-08];
+#### ( -V + C )cos( y, d1 ) = C = ( V + C )cos( y, d2 ) [2025-02-08];
 
-### Ft = L = F't'; F'=(-F); t'=0-t, t=0-t'; dipolar events. [2023-03-03];
+#### Ft = L = F't'; F'=(-F); t'=0-t, t=0-t'; dipolar events. [2023-03-03];
 
-### F' = ma' = m(V1-V0)/1 = m(C-V0) = observer deviation. [2023-11-10];
+#### F' = ma' = m(V1-V0)/1 = m(C-V0) = observer deviation. [2023-11-10];
 
 #### each time one eats, the fate changed a bit. before time were clouds, life was born at first glance.
 
-### F = [Spinning 0^0,LD,WE,HD] = Rainbow Gravity. [2022-03-06];
+#### F = [Spinning 0^0,LD,WE,HD] = Rainbow Gravity. [2022-03-06];
 
-### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
+##### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
 
 #### d(C^2) = d( V(x,y,z)V(x,y,z) ) = V(x,y,z)A(x,y,z) = 0, all movement have orthogonal acceleration.  [2025-05-17];
 
 #### curvature = F(A) / F(V) = F(A)/1 = orthogonal force. [2025-05-17];
 
-### F = 0 = Space Super High Way = [cos(lr,LD) == cos(hr,HD)];
+##### F = 0 = Space Super High Way = [cos(lr,LD) == cos(hr,HD)];
 
-### delta(m) / delta(t) = one ton electrons in belly coil.
+##### delta(m) / delta(t) = one ton electrons in belly coil.
 
-### S'(t)=speed(line); S''(t)=field(circle); S'''(t)=gravity(cone). [2023-05-27];
+##### S'(t)=speed(line); S''(t)=field(circle); S'''(t)=gravity(cone). [2023-05-27];
 
 #### board a plane on the air to another speedtime. [2023-11-15];
 
-### Twins: P = mV = (m0, V0) + (m1, V1) - (m2, -V2). [2023-11-19]; 
+#### Twins: P = mV = (m0, V0) + (m1, V1) - (m2, -V2). [2023-11-19]; 
 
 #### use Twins to build High-Time and Low-Time, to mitigate Light-Time and Mass. [2023-11-19]; 
 
@@ -49,23 +49,23 @@
 
 #### b-field = relative movement, twist b-field = movement. [2024-08-15];
 
-### { dot( V, curl(E) ) = dot( E, curl(V) ) } = DNA of Ether. [2024-08-16] [2025-01-01];
+#### { dot( V, curl(E) ) = dot( E, curl(V) ) } = DNA of Ether. [2024-08-16] [2025-01-01];
 
-#### cos(ratio,volume) of speedtime. positive volume object has Mass(time-lines). negative volume object faster than light(teleport). [2023-11-21]; 
+##### cos(ratio,volume) of speedtime. positive volume object has Mass(time-lines). negative volume object faster than light(teleport). [2023-11-21]; 
 
-#### light-speed with fast-time possible in big volume. [2023-11-22]; 
+##### light-speed with fast-time possible in big volume. [2023-11-22]; 
 
-#### leaving increases speed, closing increases time. [2023-11-24]; 
+##### leaving increases speed, closing increases time. [2023-11-24]; 
 
-### initial kick: f( t1, x1 ) = g( t0, x0, y0, z0, ...geo ). [2024-07-21]; 
+##### initial kick: f( t1, x1 ) = g( t0, x0, y0, z0, ...geo ). [2024-07-21]; 
 
-### Creation = N(movement to chaos) - M(chaos to movement). [2024-08-16];
+##### Creation = N(movement to chaos) - M(chaos to movement). [2024-08-16];
 
-### geometric conservation: Moving = X-Y (B-E field) reverse. [2025-11-12]; 
+##### geometric conservation: Moving = X-Y (B-E field) reverse. [2025-11-12]; 
 
-### curl(B) = (dE / dt) / (C^2) .. (dE / dt) = (C^2)curl(B) = curl(B+A). [2025-11-21];
+#### curl(B) = (dE / dt) / (C^2) .. (dE / dt) = (C^2)curl(B) = curl(B+A). [2025-11-21];
 
-#### F(A) = J(E). A is the movement from geometry. 
+##### F(A) = J(E). A is the movement from geometry. 
 
 
 # iBoxDB  
@@ -97,10 +97,10 @@ Dual Core Application Database
 
 
 
-[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iboxdb392.zip&selected=pilotfiber)
+[Download Assemblies](https://sourceforge.net/settings/mirror_choices?projectname=application-database&filename=iboxdb4.zip&selected=pilotfiber)
 
 
-[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iboxdb392.zip)
+[Download Mirror](https://github.com/iboxdb/hijk/raw/dependencies/kits/iboxdb4.zip)
 
 
 [Website Mirror https://iboxdb.github.io/](https://iboxdb.github.io/)
@@ -245,17 +245,46 @@ as above, **box** is method's local variable, don't define as global variable. o
   box.Select("!from Member")  
 ```
 
+### Weak Object 
+
+```java
+ //Strongly typed
+box.select("from Table where Id > ?" , 1L);
+//Weak Object
+box.select("from Table where Id > ?" , new Variant("1"));  
+```
+
 ### Index, make Select hundred times faster in average
 
 ```cs
+  //Index
+  config.EnsureIndex<Member>("Member", "Field1")
+  config.ensureIndex(Member.class, "Member", isUnique,"Field1")
+  //Composite-Index
   config.EnsureIndex<Member>("Member", "Field1","Field2")
   config.ensureIndex(Member.class, "Member", isUnique,"Field1","Field2")
+  //Both can speed up Search, free to choose one of them.
+  //only one Index will be selected in one Search, 
+  //adding both to one Search will waste.
+  //Index is generic, and fast enough.
+  //Composite-Index mostly used in equal-and-equal scenario
   box.Select("from Member where Field1 == ? & Field2 == ?",arg1,arg2)
+
 ```
+
 ```cs
   //Id on the Left would faster in many cases
   box.Select("from Member where Id == ? & Field == ?",id,arg)
+
+  //Key is primary Index, can create composite Index with Key
+  //but Key is unique, the second field is rarely used
+  config.EnsureIndex(..., "Id","Field")
+  //switch the order might help in some cases
+  config.EnsureIndex(..., "Field","Id")
+  //see detail of Array comparison
+  //KeyValue databases always have Key
 ```
+
 ```cs
   //combining Results would faster than OR,
   //depends on the scale of dataset and corresponded Index configure.	
@@ -276,15 +305,6 @@ as above, **box** is method's local variable, don't define as global variable. o
   public bool Insert(Member m){
     return auto.Insert(nameof(Member), m);
   }
-```
-
-### Weak Object 
-
-```java
- //Strongly typed
-box.select("from Table where Id > ?" , 1L);
-//Weak Object
-box.select("from Table where Id > ?" , new Variant("1"));  
 ```
 
 ### Compatible with LINQ (.NET)
@@ -320,7 +340,8 @@ box.select("from Table where Id > ?" , new Variant("1"));
 ### Hot Mirror Copy
 
 ```cs
-  auto.GetDatabase().CopyTo(bakAddr, bakRoot, buffer) 
+  auto.GetDatabase().CopyTo(bakAddr, bakRoot, buffer);
+  .CopyTo(bakAddr, bakRoot, buffer, new_mask_key_128000='!!NULL'); 
 ```
 
 ### Directly Select
@@ -376,7 +397,7 @@ using(var box = auto.Cube()){
   //Snapshot...
   box.Commit( ()=>{
     //Serializable...  
-  });                            
+  });
 }
 ```
 
@@ -478,7 +499,7 @@ public class StartListener implements ServletContextListener {
  var record = auto.Get<Record>("Table", 1L);
  record.Name = "Kelly";
  auto.Update("Table", record);
- auto.Delete("Table", 1L);  
+ auto.Delete("Table", 1L);
 ```
 
 ```java
@@ -492,7 +513,7 @@ public class StartListener implements ServletContextListener {
  Record record = auto.get(Record.class, "Table", 1L);
  record.Name = "Kelly";
  auto.update("Table", record);
- auto.delete("Table", 1L);  
+ auto.delete("Table", 1L);
  ```
 
 ### Memory Usage
@@ -507,6 +528,16 @@ public class StartListener implements ServletContextListener {
  cfg.ReadStreamCount = 8;
  //Write Pool, set **4-** to low Cache machine
  cfg.WriteStreamCount = 1;
+```
+
+### Install
+
+```sh
+.NET: Add NETDB/iBoxDB.NET2.DLL to Project
+```
+
+```sh
+Java: Add JavaDB/iboxdb.jar to Project
 ```
 
 ### Schemata 
@@ -549,8 +580,7 @@ using (var auto = db.Open()){
    ...
    //auto.Cube(); Insert(), Update()...
 }
-```
-
+``` 
 
 ### Automatic Object Mapping 
 
@@ -568,20 +598,13 @@ using (var auto = db.Open()){
  DatabaseConfig cfg;
  //Create Table
  ensureTable(Record.class, "Table", "Id");
- //Create Index with length 32
+ //Create Index with length 32 (default)
  ensureIndex(Record.class, "Table", "Name(32)");
+ 
+ //Indexing for byte[] or others, 
+ //using ToBase64String(byte[]) Converts it to String.
  ```
 
-
-### Install
-
-```sh
-.NET: Add NETDB/iBoxDB.DLL  to Project
-```
-
-```sh
-Java: Add JavaDB/iboxdb.jar to Project
-```
 
 ### .NET AOT Register Types
 
