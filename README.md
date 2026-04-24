@@ -1,6 +1,8 @@
 
 ### Movement is self-repairing design of Being.  [2026-01-16];
 
+#### Up is Down, Down is Up, physical body makes its own decision above soul. [@Marinah Bird]
+
 #### e^d = Ne^(Kd)  [2021-11-21];  
 
 #### cos(y,d) { (1/2) ( y^(1/d) + (y^(-1/d)) ( 1 - (1-y)^(2/d) ) ) }  [2022-03-11] @Bruce Yang CL-N; 
