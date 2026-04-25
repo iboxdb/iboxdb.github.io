@@ -1,6 +1,8 @@
 
 ### Movement is self-repairing design of Being.  [2026-01-16];
 
+### The goal of design is everything backs to origin. [2026-04-25];
+
 #### Up is Down, Down is Up, physical body makes its own decision above soul. [@Marinah Bird]
 
 #### e^d = Ne^(Kd)  [2021-11-21];  
