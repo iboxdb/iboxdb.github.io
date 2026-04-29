@@ -1,7 +1,7 @@
 
 ### Movement is self-repairing design of Being.  [2026-01-16];
 
-### The goal of design is everything backs to origin. [2026-04-25];
+#### The goal of design is everything backs to origin. [2026-04-25];
 
 #### Up is Down, Down is Up, physical body makes its own decision above soul. [@Marinah Bird]
 
@@ -33,6 +33,8 @@
 
 ##### Spin = sin(2(pi)/N)N = Cubed Particle. [2023-02-03];
 
+##### cos(0)' &lt; 0 &lt; (1 / infinite) &lt; cos(0+pi)' [2026-04-29];
+
 #### d(C^2) = d( V(x,y,z)V(x,y,z) ) = V(x,y,z)A(x,y,z) = 0, all movement have orthogonal acceleration.  [2025-05-17];
 
 #### curvature = F(A) / F(V) = F(A)/1 = orthogonal force. [2025-05-17];
@@ -50,6 +52,8 @@
 #### use Twins to build High-Time and Low-Time, to mitigate Light-Time and Mass. [2023-11-19]; 
 
 #### reverse current middled in Coil to build Twins-photon, norms of U-D surfaces outward to get zero field solid.  [2024-08-14],[2024-09-03]; 
+
+#### electrons are pinned in orbits to make solid flow in light. [2026-04-29];
 
 #### b-field = relative movement, twist b-field = movement. [2024-08-15];
 
