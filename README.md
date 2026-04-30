@@ -55,6 +55,8 @@
 
 #### electrons are pinned in orbits to make solid flow in light. [2026-04-29];
 
+#### dark-solid has different orbits, anti-solid backs in time. [2026-04-30];
+
 #### b-field = relative movement, twist b-field = movement. [2024-08-15];
 
 #### { dot( V, curl(E) ) = dot( E, curl(V) ) } = DNA of Ether. [2024-08-16] [2025-01-01];
@@ -74,6 +76,7 @@
 #### curl(B) = (dE / dt) / (C^2) .. (dE / dt) = (C^2)curl(B) = curl(B+A). [2025-11-21];
 
 ##### F(A) = J(E). A is the movement from geometry. 
+
 
 
 # iBoxDB  
