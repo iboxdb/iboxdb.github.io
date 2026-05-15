@@ -6,12 +6,17 @@
 
 #### projection { x = x*cos( a ) + k*cos( XtoK + a ) } [2025-01-28] @Bruce Yang CL-N;
 
+<hr />
 
-### Movement is self-repairing design of Being.  [2026-01-16];
+#### Movement is self-repairing design of Being.  [2026-01-16];
 
 #### The goal of design is everything backs to origin. [2026-04-25];
 
 #### Up is Down, Down is Up, physical body makes its own decision above soul. [@Marinah Bird]
+
+#### If cosmic laws existed, then it wouldn't has bad things, but bad things happened around universe deeply, proving cosmic laws are fake.
+
+<hr />
 
 #### geocentrism - heliocentrism - entropycentrism - triocentrism  [2025-02-03]
 
