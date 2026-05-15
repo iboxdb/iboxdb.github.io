@@ -14,7 +14,7 @@
 
 #### Up is Down, Down is Up, physical body makes its own decision above soul. [@Marinah Bird]
 
-#### If cosmic laws existed, then it wouldn't has bad things, but bad things happened around universe deeply, proving cosmic laws are fake.
+#### If cosmic laws existed, then it wouldn't have bad things, but bad things happened around universe deeply, proving cosmic laws are fake.
 
 <hr />
 
