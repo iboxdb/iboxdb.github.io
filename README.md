@@ -185,6 +185,9 @@ as above, **box** is method's local variable, don't define as global variable. o
 box.select("from Table where Id > ?" , 1L);
 //Weak Object
 box.select("from Table where Id > ?" , new Variant("1"));  
+
+//!any Condition without Comparison is undefined!
+select(" ... where Name ... ");
 ```
 
 ### Index, make Select hundred times faster in average
