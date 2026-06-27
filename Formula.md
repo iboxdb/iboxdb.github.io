@@ -12,6 +12,10 @@
 
 #### The goal of design is everything backs to origin. [2026-04-25];
 
+#### duplicate wave-info from past to present to achieve miracle. [2026-06-27]; 
+
+#### intercept zero-time beam-ship by entering no-time state. [2026-06-27]; 
+
 #### Up is Down, Down is Up, physical body makes its own decision above soul. [@Marinah Bird]
 
 #### If cosmic laws existed, then it wouldn't have bad things, but bad things happened around universe deeply, proving cosmic laws are fake.
