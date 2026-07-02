@@ -50,6 +50,8 @@
 
 #### curvature = F(A) / F(V) = F(A)/1 = orthogonal force. [2025-05-17];
 
+#### zero parallel acceleration helps clusters running through. [2026-07-02]; 
+
 ##### F = 0 = Space Super High Way = [cos(lr,LD) == cos(hr,HD)];
 
 ##### delta(m) / delta(t) = one ton electrons in belly coil.
