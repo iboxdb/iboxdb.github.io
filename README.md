@@ -528,7 +528,8 @@ using (var auto = db.Open()){
  *.Name(val) | Name
  *.setName(val) | Name
  *.name(val) | name
- *.setname(val) | name
+ *.set_name(val) | name
+
 
  ```java
  DatabaseConfig cfg;
@@ -576,8 +577,10 @@ MySQL
 [With MySQL Java Maven](https://sourceforge.net/p/teadb/code/)
 
 
-[With SQLite C# Dotnet](https://sourceforge.net/p/benchmarksql3/code/)
+[With SQLite C# .NET](https://sourceforge.net/p/benchmarksql3/code/)
 
+
+[With MongoDB Java Python](https://github.com/iboxdb/leafdb)
 
 
 ### Cross-Platform
