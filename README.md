@@ -190,6 +190,16 @@ box.select("from Table where Id > ?" , new Variant("1"));
 select(" ... where Name ... ");
 ```
 
+### Using in Dynamic Language
+
+```cs
+//Explicitly Converting Object 
+//if implicit conversion is not compatible
+from System import Int64
+select("... where id>=? & id<=?", Int64(i), Int64(j))
+```
+
+
 ### Index, make Select hundred times faster in average
 
 ```cs
