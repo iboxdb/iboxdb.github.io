@@ -182,9 +182,10 @@ as above, **box** is method's local variable, don't define as global variable. o
 
 ```java
  //Strongly typed
-box.select("from Table where Id > ?" , 1L);
+box.select("from Table where Id == ?" , 1L);
 //Weak Object
-box.select("from Table where Id > ?" , new Variant("1"));  
+box.select("from Table where Id == ?" , new Variant("1"));  
+//!2 Weak Objects(Number and String) in Select() is undefined!
 
 //!any Condition without Comparison is undefined!
 select(" ... where Name ... ");
