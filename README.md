@@ -572,23 +572,25 @@ EnsureTable<T1>("T1", "Id");
 ### Benchmark with MySQL
 
 ```sql
+Benchmark Version 1.7.5, Java=25, 2 Cores + 8G
+
 iBoxDB
- Insert: 1,000,000 AVG: 47,016 objects/s 
- Update: 1,000,000 AVG: 25,558 objects/s 
- Delete: 1,000,000 AVG: 42,714 objects/s 
+  Insert: 1,100,000 AVG: 22,055 objects/s 
+  Update: 1,100,000 AVG: 38,833 objects/s 
+  Delete: 1,100,000 AVG: 24,089 objects/s 
 
 MySQL
- Insert: 1,000,000 AVG: 5,514 objects/s 
- Update: 1,000,000 AVG: 5,109 objects/s 
- Delete: 1,000,000 AVG: 6,044 objects/s 
+  Insert: 1,100,000 AVG: 1,948 objects/s 
+  Update: 1,100,000 AVG: 1,515 objects/s 
+  Delete: 1,100,000 AVG: 1,850 objects/s 
 ```
 
 ### Benchmark Code
 
-[With MySQL Java Maven](https://sourceforge.net/p/teadb/code/)
+[With MySQL Java Wasm](https://sourceforge.net/p/teadb/code/)
 
 
-[With SQLite C# .NET](https://sourceforge.net/p/benchmarksql3/code/)
+[With SQLite .NET Node.js](https://sourceforge.net/p/benchmarksql3/code/)
 
 
 [With MongoDB Java Python](https://github.com/iboxdb/leafdb)
